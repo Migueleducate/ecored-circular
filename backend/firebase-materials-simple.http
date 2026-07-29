@@ -19,8 +19,8 @@
 # ============================================================
 
 @FIREBASE_API_KEY = AIzaSyBuMmgSUoXKaSeM5rhfO2L7UoH1oQFBA3Y
-@EMAIL = prueba123@prueba.com
-@PASSWORD = 12345678
+@EMAIL =prueba2@gmail.com
+@PASSWORD = 122334
 @BACKEND_URL = http://127.0.0.1:8000
 
 
@@ -45,7 +45,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-  "name": "Empresa Prueba Firebase",
+  "name": "Uniempresarial V2",
   "nit": "900123456-7",
   "city": "Bogotá",
   "sector": "Reciclaje"
