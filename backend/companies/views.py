@@ -23,6 +23,8 @@ class CompanyViewSet(viewsets.ViewSet):
                     "nit": 1,
                     "city": 1,
                     "sector": 1,
+                    "address":1,
+                    "ceo":1,
                     "created_at": 1,
                 },
             )
@@ -50,6 +52,8 @@ class CompanyViewSet(viewsets.ViewSet):
             "nit": data.get("nit"),
             "city": data.get("city"),
             "sector": data.get("sector"),
+            "address": data.get("address"),
+            "ceo": data.get("ceo"),
             "created_at": datetime.now(timezone.utc).isoformat(),
         }
 
@@ -97,6 +101,8 @@ class MaterialListingViewSet(viewsets.ViewSet):
             "quantity": float(data.get("quantity")),
             "unit": data.get("unit", "kg"),
             "location": data.get("location"),
+            "price": data.get("price"),
+            "phone": data.get("phone"),
             "status": data.get("status", "available"),
             "published_by": request.firebase_user.get("uid"),
             "created_at": datetime.now(timezone.utc).isoformat(),
